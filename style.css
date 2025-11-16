@@ -91,10 +91,17 @@
   max-height: 1000px;
 }
 
+.brands-list__link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
 .brands-list__item {
+  display: flex;
   flex: 0 0 240px;
   height: 72px;
-  display: flex;
   justify-content: space-between;
   align-items: center;
   background: #ffff;
@@ -105,47 +112,43 @@
 }
 
 /* === Логотипы (фоновые изображения) === */
-.brands-list__content {
-  display: block;
-  width: 120px;
-  height: 72px;
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: contain;
+.brands-list__logo {
+  object-fit: contain;
+  object-position: left center;
 }
 
 /* Примеры логотипов */
-.brands-list__content--lenovo {
-  background-image: url("files/img/lenovo.svg");
-  background-size: 108px 32px; 
+.brands-list__logo--lenovo {
+  width: 108px;
+  height:  32px; 
 }
-.brands-list__content--samsung {
-  background-image: url("files/img/samsung.svg");
-  background-size: 116px 38px;
+.brands-list__logo--samsung {
+  width: 116px;
+  height:  38px;
 }
-.brands-list__content--apple { 
-  background-image: url("files/img/apple.svg");
-  background-size: 44px 44px;
+.brands-list__logo--apple {
+  width: 44px;
+  height:  44px;
 }
-.brands-list__content--viewsonic { 
-  background-image: url("files/img/viewsonic.svg"); 
-  background-size: 120px 21px;
+.brands-list__logo--viewsonic { 
+  width: 120px;
+  height: 21px;
 }
-.brands-list__content--bosch { 
-  background-image: url("files/img/bosch.svg");
-  background-size: 120px 28px;
+.brands-list__logo--bosch {
+  width: 120px;
+  height: 28px;
 }
-.brands-list__content--hp { 
-  background-image: url("files/img/hp.svg"); 
-  background-size: 52px 52px;
+.brands-list__logo--hp { 
+  width: 52px;
+  height: 52px;
 }
-.brands-list__content--acer { 
-  background-image: url("files/img/acer.svg");
-  background-size: 94px 24px; 
+.brands-list__logo--acer { 
+  width: 94px;
+  height: 24px; 
 }
-.brands-list__content--sony { 
-  background-image: url("files/img/sony.svg"); 
-  background-size: 120px 25px;
+.brands-list__logo--sony { 
+  width: 120px;
+  height: 25px;
 }
 
 /* === Кнопка "стрелка" внутри карточки === */
